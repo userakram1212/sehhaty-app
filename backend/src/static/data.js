@@ -1,7 +1,8 @@
 // نظام إدارة البيانات لموقع صحتي - يتصل بالواجهة الخلفية
 
 // رابط الواجهة الخلفية
-const API_BASE_URL = 'https://sehhaty-backend-2025.onrender.com/api';
+const API_BASE_URL = window.location.origin + '/api';
+
 
 class DataManager {
     constructor() {
