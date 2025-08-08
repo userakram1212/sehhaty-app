@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صحتي - المنصة الوطنية للصحة السعودية</title>
+    <meta name="description" content="منصة صحتي السعودية الرسمية: احجز مواعيدك الطبية، احصل على استشارات فورية مع أطباء مختصين">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="شعار صحتي" style="height: 70px;">
+                </div>
+                <nav class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="showLogin()">تسجيل الدخول</button>
+                    <button class="btn btn-primary" onclick="showRegister()">إنشاء حساب</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>منصة صحتي السعودية</h1>
+            <p>احجز مواعيدك الطبية، احصل على استشارات فورية مع أطباء مختصين، وتابع صحتك بكل سهولة وأمان</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="showAppointment()">حجز موعد طبي</button>
+                <button class="btn btn-secondary" onclick="showConsultation()">استشارة فورية</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا الطبية</h2>
+            <p class="section-subtitle">نقدم لك مجموعة شاملة من الخدمات الصحية الرقمية</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>حجز المواعيد</h3>
+                    <p>احجز مواعيدك الطبية مع أفضل الأطباء في المملكة بكل سهولة</p>
+                    <button class="btn btn-primary" onclick="showAppointment()">احجز الآن</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>الاستشارات الفورية</h3>
+                    <p>احصل على استشارة طبية فورية من أطباء مختصين عبر الإنترنت</p>
+                    <button class="btn btn-primary" onclick="showConsultation()">استشر الآن</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>طلب تقرير طبي</h3>
+                    <p>احصل على تقاريرك الطبية والوصفات الطبية بشكل إلكتروني</p>
+                    <button class="btn btn-primary" onclick="showMedicalRequest()">اطلب تقرير</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📁</div>
+                    <h3>استعراض الملف الطبي</h3>
+                    <p>استعرض جميع طلباتك وتقاريرك الطبية في مكان واحد</p>
+                    <button class="btn btn-primary" onclick="showMedicalFile()">استعرض الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>30M+</h3>
+                    <p>مستفيد مسجل</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>طبيب مختص</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>خدمة متاحة</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99%</h3>
+                    <p>رضا المستخدمين</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">لماذا تختار صحتي؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🔒 آمن ومحمي</h3>
+                    <p>جميع بياناتك الطبية محمية بأعلى معايير الأمان والخصوصية</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ سريع وسهل</h3>
+                    <p>واجهة بسيطة وسهلة الاستخدام للحصول على الخدمات بسرعة</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏆 جودة عالية</h3>
+                    <p>أطباء مختصون ومعتمدون من وزارة الصحة السعودية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>صحتي</h3>
+                    <p>المنصة الوطنية للصحة السعودية التابعة لوزارة الصحة</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الخدمات</h3>
+                    <p>حجز المواعيد</p>
+                    <p>الاستشارات الطبية</p>
+                    <p>التقارير الطبية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <p>للتواصل واتساب: <a href="http://wa.me/+966552847882" target="_blank">http://wa.me/+966552847882</a></p>
+                    <p>البريد الإلكتروني: seha1sehty@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 وزارة الصحة السعودية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">تسجيل الدخول</h2>
+                <button class="modal-close" onclick="hideModal('loginModal')">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label">رقم الهوية أو الإقامة *</label>
+                    <input type="text" id="loginNationalId" class="form-input" placeholder="أدخل رقم الهوية" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">تسجيل الدخول</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">إنشاء حساب جديد</h2>
+                <button class="modal-close" onclick="hideModal('registerModal')">&times;</button>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label class="form-label">الاسم الكامل *</label>
+                    <input type="text" id="fullName" class="form-input" placeholder="أدخل الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">رقم الهوية أو الإقامة *</label>
+                    <input type="text" id="nationalId" class="form-input" placeholder="أدخل رقم الهوية" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">البريد الإلكتروني *</label>
+                    <input type="email" id="email" class="form-input" placeholder="أدخل البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">رقم الجوال *</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="أدخل رقم الجوال" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">إنشاء الحساب</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="appointmentModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">حجز موعد طبي</h2>
+                <button class="modal-close" onclick="hideModal('appointmentModal')">&times;</button>
+            </div>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label class="form-label">رقم الهوية للتحقق *</label>
+                    <input type="text" id="appointmentNationalId" class="form-input" placeholder="أدخل رقم الهوية للتحقق" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">التخصص الطبي *</label>
+                    <select id="specialty" class="form-select" required>
+                        <option>اختر التخصص</option>
+                        <option>طب عام</option>
+                        <option>طب الأطفال</option>
+                        <option>طب النساء والولادة</option>
+                        <option>طب القلب</option>
+                        <option>طب العيون</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">المدينة</label>
+                    <select id="city" class="form-select">
+                        <option>اختر المدينة</option>
+                        <option>الرياض</option>
+                        <option>جدة</option>
+                        <option>الدمام</option>
+                        <option>مكة المكرمة</option>
+                        <option>المدينة المنورة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">التاريخ المفضل</label>
+                    <input type="date" id="preferredDate" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">الوقت المفضل</label>
+                    <select id="preferredTime" class="form-select">
+                        <option>اختر الوقت</option>
+                        <option>صباحاً (8:00 - 12:00)</option>
+                        <option>مساءً (4:00 - 8:00)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">حجز الموعد</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="consultationModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">استشارة طبية فورية</h2>
+                <button class="modal-close" onclick="hideModal('consultationModal')">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">نوع الاستشارة</label>
+                    <select class="form-select">
+                        <option>اختر نوع الاستشارة</option>
+                        <option>استشارة عامة</option>
+                        <option>استشارة طوارئ</option>
+                        <option>متابعة حالة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">وصف الحالة</label>
+                    <textarea class="form-input" rows="4" placeholder="اكتب وصف مفصل عن حالتك الصحية"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">بدء الاستشارة</button>
+            </form>
+        </div>
+    </div>
+
+<div id="medicalRequestModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">طلب تقرير طبي</h2>
+                <button class="modal-close" onclick="hideModal('medicalRequestModal')">&times;</button>
+            </div>
+            <form id="medicalRequestForm">
+                <div class="form-group">
+                    <label class="form-label">نوع التقرير</label>
+                    <select id="reportType" class="form-select" required>
+                        <option value="">اختر نوع التقرير</option>
+                        <option value="medical_excuse">عذر طبي (سكليف)</option>
+                        <option value="review_certificate">مشهد مراجعة</option>
+                        <option value="patient_companion_report">تقرير مرافق مريض</option>
+                    </select>
+                </div>
+
+                <!-- Fields for Medical Excuse -->
+                <div id="medicalExcuseFields" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label">تاريخ بداية العذر *</label>
+                        <input type="date" id="excuseStartDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">تاريخ انتهاء العذر *</label>
+                        <input type="date" id="excuseEndDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">عدد أيام العذر</label>
+                        <input type="text" id="excuseDays" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">المنطقة *</label>
+                        <input type="text" id="excuseRegion" class="form-input" placeholder="أدخل المنطقة">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">جهة العمل *</label>
+                        <input type="text" id="excuseWorkplace" class="form-input" placeholder="أدخل جهة العمل">
+                    </div>
+                </div>
+
+                <!-- Fields for Review Certificate -->
+                <div id="reviewCertificateFields" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label">تاريخ المراجعة *</label>
+                        <input type="date" id="reviewDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">المنطقة *</label>
+                        <input type="text" id="reviewRegion" class="form-input" placeholder="أدخل المنطقة">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">جهة العمل *</label>
+                        <input type="text" id="reviewWorkplace" class="form-input" placeholder="أدخل جهة العمل">
+                    </div>
+                </div>
+
+                <!-- Fields for Patient Companion Report -->
+                <div id="patientCompanionFields" style="display: none;">
+                    <h3 class="form-section-title">بيانات المريض</h3>
+                    <div class="form-group">
+                        <label class="form-label">اسم المريض *</label>
+                        <input type="text" id="patientName" class="form-input" placeholder="أدخل اسم المريض">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">رقم هوية المريض *</label>
+                        <input type="text" id="patientNationalId" class="form-input" placeholder="أدخل رقم هوية المريض">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">تاريخ دخول المستشفى *</label>
+                        <input type="date" id="hospitalEntryDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">تاريخ الخروج من المستشفى *</label>
+                        <input type="date" id="hospitalExitDate" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">الحالة المرضية *</label>
+                        <textarea id="medicalCondition" class="form-input" rows="3" placeholder="وصف الحالة المرضية"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">المنطقة *</label>
+                        <input type="text" id="patientRegion" class="form-input" placeholder="أدخل المنطقة">
+                    </div>
+
+                    <h3 class="form-section-title">بيانات المرافق</h3>
+                    <div class="form-group">
+                        <label class="form-label">اسم المرافق *</label>
+                        <input type="text" id="companionName" class="form-input" placeholder="أدخل اسم المرافق">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">رقم هوية المرافق *</label>
+                        <input type="text" id="companionNationalId" class="form-input" placeholder="أدخل رقم هوية المرافق">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">صلة القرابة *</label>
+                        <input type="text" id="relationship" class="form-input" placeholder="مثال: أخ، ابن، زوج">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">ملاحظات إضافية</label>
+                    <textarea id="additionalNotes" class="form-input" rows="3" placeholder="أي ملاحظات أو تفاصيل إضافية"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">طلب التقرير</button>
+            </form>
+        </div>
+    </div>
+
+        <div id="medicalFileModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">استعراض الملف الطبي</h2>
+                <button class="modal-close" onclick="hideModal('medicalFileModal')">&times;</button>
+            </div>
+            <form id="medicalFileForm">
+                <div class="form-group">
+                    <label class="form-label">رقم الهوية أو الإقامة *</label>
+                    <input type="text" id="medicalFileNationalId" class="form-input" placeholder="أدخل رقم الهوية" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">استعراض الملف</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
